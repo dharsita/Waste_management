@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Features | Eco Waste Management Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+      color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(to right, #2e7d32, #43a047);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin-bottom: 0.3rem;
+      font-size: 2.2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+      flex: 1; /* Push footer to bottom */
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #2e7d32;
+      position: relative;
+    }
+
+    .container h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background-color: #2e7d32;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .feature-card {
+      background-color: #ffffff;
+      border-left: 6px solid #2e7d32;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-card h3 {
+      margin-top: 0;
+      color: #2e7d32;
+      font-size: 1.3rem;
+    }
+
+    .feature-card p {
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #e0f2f1;
+      color: #2e7d32;
+      font-size: 15px;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Eco Waste Management Portal</h1>
+    <p>Explore the powerful features designed for efficient and eco-friendly waste management.</p>
+  </header>
+
+  <div class="container">
+    <h2>🌟 Key Features</h2>
+    
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <h3>🧹 Worker Management</h3>
+        <p>View, assign, and manage sanitation workers efficiently. Real-time updates and allocation based on departments.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🗑️ Dustbin Monitoring</h3>
+        <p>Track dustbin status and location using integrated smart monitoring systems with map support.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🚛 Truck Scheduling</h3>
+        <p>Optimize truck routes and schedules for waste collection to ensure timely and cost-effective service.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>📡 Real-Time Tracking</h3>
+        <p>Track dustbins, trucks, and worker activity in real time to ensure full transparency and accountability.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>📝 Queries & Feedback</h3>
+        <p>Residents can easily raise concerns or provide feedback using the queries portal.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🔐 Secure Login & Signup</h3>
+        <p>Secure user authentication system to ensure safe access to different user modules.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Eco Waste Management Portal | Designed for a Cleaner Tomorrow
+  </footer>
+
+</body>
+</html>
